@@ -14,6 +14,7 @@
 		224033A12CAD6FDD00A17525 /* ClassmateAppSchmidt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2240339F2CAD6FDD00A17525 /* ClassmateAppSchmidt.xcdatamodeld */; };
 		224033A32CAD6FDF00A17525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224033A22CAD6FDF00A17525 /* Assets.xcassets */; };
 		224033A62CAD6FDF00A17525 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 224033A52CAD6FDF00A17525 /* Base */; };
+		224033AE2CAD702B00A17525 /* Classmate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224033AD2CAD702B00A17525 /* Classmate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		224033A22CAD6FDF00A17525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		224033A52CAD6FDF00A17525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		224033A72CAD6FDF00A17525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		224033AD2CAD702B00A17525 /* Classmate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classmate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				224033962CAD6FDD00A17525 /* AppDelegate.swift */,
 				224033982CAD6FDD00A17525 /* SceneDelegate.swift */,
 				2240339A2CAD6FDD00A17525 /* ViewController.swift */,
+				224033AD2CAD702B00A17525 /* Classmate.swift */,
 				2240339C2CAD6FDD00A17525 /* Main.storyboard */,
 				224033A22CAD6FDF00A17525 /* Assets.xcassets */,
 				224033A42CAD6FDF00A17525 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				224033A12CAD6FDD00A17525 /* ClassmateAppSchmidt.xcdatamodeld in Sources */,
+				224033AE2CAD702B00A17525 /* Classmate.swift in Sources */,
 				2240339B2CAD6FDD00A17525 /* ViewController.swift in Sources */,
 				224033972CAD6FDD00A17525 /* AppDelegate.swift in Sources */,
 				224033992CAD6FDD00A17525 /* SceneDelegate.swift in Sources */,
