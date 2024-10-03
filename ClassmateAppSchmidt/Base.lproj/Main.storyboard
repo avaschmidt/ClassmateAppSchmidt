@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Upv-Zd-WlQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Upv-Zd-WlQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,32 +15,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tiger Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLC-Ek-VLo">
-                                <rect key="frame" x="73" y="92" width="268" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="80"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUe-4e-ker">
-                                <rect key="frame" x="73" y="493" width="268" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="VIEW CLASS">
-                                    <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
-                                    <color key="baseBackgroundColor" red="0.68164189205956216" green="0.52013884515832054" blue="0.31947728868002462" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="8Aq-mC-7gc" kind="show" id="Xzn-ZT-nwQ"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tiger" translatesAutoresizingMaskIntoConstraints="NO" id="hZb-JI-Hz6">
-                                <rect key="frame" x="73" y="194" width="271" height="241"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f6p-Og-uAb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNE-2n-aBj">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiger Class" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLC-Ek-VLo">
+                                        <rect key="frame" x="0.0" y="86" width="414" height="93.5"/>
+                                        <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiger" translatesAutoresizingMaskIntoConstraints="NO" id="hZb-JI-Hz6">
+                                        <rect key="frame" x="0.0" y="179.5" width="414" height="494.5"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUe-4e-ker">
+                                        <rect key="frame" x="0.0" y="674" width="414" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="VIEW CLASS">
+                                            <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                            <color key="baseBackgroundColor" red="0.68164189205956216" green="0.52013884515832054" blue="0.31947728868002462" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="8Aq-mC-7gc" kind="show" id="Xzn-ZT-nwQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8km-Yv-dHf">
+                                        <rect key="frame" x="0.0" y="717" width="414" height="145"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8km-Yv-dHf" firstAttribute="height" secondItem="f6p-Og-uAb" secondAttribute="height" multiplier="0.168213" id="IGJ-po-T7V"/>
+                                    <constraint firstItem="TLC-Ek-VLo" firstAttribute="height" secondItem="f6p-Og-uAb" secondAttribute="height" multiplier="0.108469" id="RVN-0t-ovv"/>
+                                    <constraint firstItem="XUe-4e-ker" firstAttribute="height" secondItem="f6p-Og-uAb" secondAttribute="height" multiplier="0.05" id="cxd-jK-boc"/>
+                                    <constraint firstItem="QNE-2n-aBj" firstAttribute="height" secondItem="f6p-Og-uAb" secondAttribute="height" multiplier="0.1" id="pVh-9P-jLz"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.94328010082244873" green="0.71978648615648844" blue="0.4421039442954946" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f6p-Og-uAb" secondAttribute="bottom" id="4AD-wX-cm3"/>
+                            <constraint firstAttribute="trailing" secondItem="f6p-Og-uAb" secondAttribute="trailing" id="Opb-F1-f80"/>
+                            <constraint firstItem="f6p-Og-uAb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mm8-eX-o8T"/>
+                            <constraint firstItem="f6p-Og-uAb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wk5-4w-3Gf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Hk2-ZA-DCg">
                         <barButtonItem key="backBarButtonItem" title="HOME" id="nqt-eU-Zfk"/>
@@ -58,87 +84,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cxw-vp-lJk">
-                                <rect key="frame" x="88" y="174" width="240" height="276"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NICKNAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dol-K8-GuT">
-                                <rect key="frame" x="0.0" y="458" width="414" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="MT4-b8-KDA">
-                                <rect key="frame" x="16" y="660" width="377" height="29"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="e2i-uT-Ovq">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7h-HJ-NUw">
-                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="29"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="NEXT">
-                                            <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
-                                            <color key="baseBackgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="nextAction:" destination="8Aq-mC-7gc" eventType="touchUpInside" id="Les-ki-AUT"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yeh-ig-vFN">
-                                        <rect key="frame" x="101.5" y="0.0" width="72.5" height="29"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="SORT">
-                                            <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
-                                            <color key="baseBackgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="sortACTION:" destination="8Aq-mC-7gc" eventType="touchUpInside" id="uMH-kn-A5j"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fq-r0-1Tn">
-                                        <rect key="frame" x="203" y="0.0" width="72.5" height="29"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="ADD">
-                                            <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
-                                            <color key="baseBackgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="addAction:" destination="8Aq-mC-7gc" eventType="touchUpInside" id="rzG-8s-uOl"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhp-Uf-8d0">
-                                        <rect key="frame" x="304.5" y="0.0" width="72.5" height="29"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="EDIT">
-                                            <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
-                                            <color key="baseBackgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="editAction:" destination="8Aq-mC-7gc" eventType="touchUpInside" id="UfE-ec-dkd"/>
-                                        </connections>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lM-3j-ZSg">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cxw-vp-lJk">
+                                        <rect key="frame" x="0.0" y="42.5" width="414" height="385"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NICKNAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dol-K8-GuT">
+                                        <rect key="frame" x="0.0" y="427.5" width="414" height="42"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRADE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSm-Lx-7nb">
+                                        <rect key="frame" x="0.0" y="469.5" width="414" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="MT4-b8-KDA">
+                                        <rect key="frame" x="0.0" y="512" width="414" height="38.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7h-HJ-NUw">
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="38.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="NEXT">
+                                                    <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
+                                                    <color key="baseBackgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="nextAction:" destination="8Aq-mC-7gc" eventType="touchUpInside" id="Les-ki-AUT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yeh-ig-vFN">
+                                                <rect key="frame" x="111" y="0.0" width="81.5" height="38.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="SORT">
+                                                    <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
+                                                    <color key="baseBackgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="sortACTION:" destination="8Aq-mC-7gc" eventType="touchUpInside" id="uMH-kn-A5j"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fq-r0-1Tn">
+                                                <rect key="frame" x="221.5" y="0.0" width="82" height="38.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="ADD">
+                                                    <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
+                                                    <color key="baseBackgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="addAction:" destination="8Aq-mC-7gc" eventType="touchUpInside" id="rzG-8s-uOl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhp-Uf-8d0">
+                                                <rect key="frame" x="332.5" y="0.0" width="81.5" height="38.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="EDIT">
+                                                    <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
+                                                    <color key="baseBackgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="editAction:" destination="8Aq-mC-7gc" eventType="touchUpInside" id="UfE-ec-dkd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LN-g4-w0T">
+                                        <rect key="frame" x="0.0" y="550.5" width="414" height="219.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="5lM-3j-ZSg" firstAttribute="height" secondItem="e2i-uT-Ovq" secondAttribute="height" multiplier="0.055" id="2Db-pa-DKK"/>
+                                    <constraint firstItem="Cxw-vp-lJk" firstAttribute="height" secondItem="e2i-uT-Ovq" secondAttribute="height" multiplier="0.5" id="L55-n9-d1b"/>
+                                    <constraint firstItem="dol-K8-GuT" firstAttribute="height" secondItem="e2i-uT-Ovq" secondAttribute="height" multiplier="0.055" id="eTA-C8-PJB"/>
+                                    <constraint firstItem="MT4-b8-KDA" firstAttribute="height" secondItem="e2i-uT-Ovq" secondAttribute="height" multiplier="0.05" id="fmQ-Ql-d3y"/>
+                                    <constraint firstItem="nSm-Lx-7nb" firstAttribute="height" secondItem="e2i-uT-Ovq" secondAttribute="height" multiplier="0.055" id="vlx-CK-7jZ"/>
+                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lM-3j-ZSg">
-                                <rect key="frame" x="27" y="103" width="361" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GRADE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSm-Lx-7nb">
-                                <rect key="frame" x="86" y="534" width="240" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PI2-Eo-IR1"/>
                         <color key="backgroundColor" red="0.94328010080000002" green="0.71978648619999996" blue="0.4421039443" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="MT4-b8-KDA" firstAttribute="leading" secondItem="PI2-Eo-IR1" secondAttribute="leading" constant="16" id="LjA-kQ-1xb"/>
-                            <constraint firstItem="PI2-Eo-IR1" firstAttribute="trailing" secondItem="MT4-b8-KDA" secondAttribute="trailing" constant="21" id="QbZ-EN-i0D"/>
-                            <constraint firstItem="PI2-Eo-IR1" firstAttribute="bottom" secondItem="MT4-b8-KDA" secondAttribute="bottom" constant="173" id="uiK-y7-4In"/>
+                            <constraint firstItem="e2i-uT-Ovq" firstAttribute="top" secondItem="PI2-Eo-IR1" secondAttribute="top" id="O3l-vJ-LJO"/>
+                            <constraint firstItem="e2i-uT-Ovq" firstAttribute="leading" secondItem="PI2-Eo-IR1" secondAttribute="leading" id="Xgc-cC-8hi"/>
+                            <constraint firstItem="PI2-Eo-IR1" firstAttribute="trailing" secondItem="e2i-uT-Ovq" secondAttribute="trailing" id="Zfc-pK-57J"/>
+                            <constraint firstItem="PI2-Eo-IR1" firstAttribute="bottom" secondItem="e2i-uT-Ovq" secondAttribute="bottom" id="bjK-qa-I5w"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m2s-5c-XRe">
@@ -166,24 +207,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R0c-ZD-E0T">
-                                <rect key="frame" x="41" y="192" width="333" height="561"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="0.97254902119999997" green="0.95686274770000002" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sorted Class List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmk-3U-1SS">
-                                <rect key="frame" x="87" y="131" width="240" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8gw-UC-dwH">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorted Class List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmk-3U-1SS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R0c-ZD-E0T">
+                                        <rect key="frame" x="0.0" y="30" width="414" height="740"/>
+                                        <color key="backgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.97254902119999997" green="0.95686274770000002" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XVu-94-XA5"/>
                         <color key="backgroundColor" red="0.94509804249999996" green="0.72156864399999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8gw-UC-dwH" firstAttribute="top" secondItem="XVu-94-XA5" secondAttribute="top" id="0Ag-IH-DgL"/>
+                            <constraint firstItem="8gw-UC-dwH" firstAttribute="leading" secondItem="XVu-94-XA5" secondAttribute="leading" id="9qE-El-0Ak"/>
+                            <constraint firstItem="XVu-94-XA5" firstAttribute="bottom" secondItem="8gw-UC-dwH" secondAttribute="bottom" id="YMS-MN-9AN"/>
+                            <constraint firstItem="XVu-94-XA5" firstAttribute="trailing" secondItem="8gw-UC-dwH" secondAttribute="trailing" id="aZq-Rf-sBb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2fh-rQ-Edj"/>
                     <connections>
@@ -201,10 +251,79 @@
                     <view key="view" contentMode="scaleToFill" id="jNH-da-5QM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wmZ-d7-ayh">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Student" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7K-uZ-Pq7">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Student To Edit" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWV-hx-qsF">
+                                        <rect key="frame" x="0.0" y="38.5" width="414" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Changed Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nIM-FM-GpN">
+                                        <rect key="frame" x="0.0" y="77" width="414" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Changed Nickname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tdi-9r-DXB">
+                                        <rect key="frame" x="0.0" y="115.5" width="414" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Changed Grade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CFU-OS-rTt">
+                                        <rect key="frame" x="0.0" y="154" width="414" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zP9-th-b2g">
+                                        <rect key="frame" x="0.0" y="192.5" width="414" height="38.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="ENTER">
+                                            <color key="baseBackgroundColor" red="0.68164189210000004" green="0.52013884519999998" blue="0.31947728869999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="enter2Action:" destination="b06-hy-Hml" eventType="touchUpInside" id="k99-ek-H2z"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1d-qO-3lM">
+                                        <rect key="frame" x="0.0" y="231" width="414" height="539"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="b7K-uZ-Pq7" firstAttribute="height" secondItem="wmZ-d7-ayh" secondAttribute="height" multiplier="0.05" id="1yh-kZ-fSC"/>
+                                    <constraint firstItem="zP9-th-b2g" firstAttribute="height" secondItem="wmZ-d7-ayh" secondAttribute="height" multiplier="0.05" id="CZm-gy-qh6"/>
+                                    <constraint firstItem="OWV-hx-qsF" firstAttribute="height" secondItem="wmZ-d7-ayh" secondAttribute="height" multiplier="0.05" id="WBf-tC-BDd"/>
+                                    <constraint firstItem="Tdi-9r-DXB" firstAttribute="height" secondItem="wmZ-d7-ayh" secondAttribute="height" multiplier="0.05" id="bdf-Fa-Lks"/>
+                                    <constraint firstItem="CFU-OS-rTt" firstAttribute="height" secondItem="wmZ-d7-ayh" secondAttribute="height" multiplier="0.05" id="r5R-w7-vRT"/>
+                                    <constraint firstItem="nIM-FM-GpN" firstAttribute="height" secondItem="wmZ-d7-ayh" secondAttribute="height" multiplier="0.05" id="v6A-BM-0CJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="9po-cN-XIl"/>
                         <color key="backgroundColor" red="0.94509804249999996" green="0.72156864399999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9po-cN-XIl" firstAttribute="bottom" secondItem="wmZ-d7-ayh" secondAttribute="bottom" id="DPD-Sp-w5u"/>
+                            <constraint firstItem="wmZ-d7-ayh" firstAttribute="top" secondItem="9po-cN-XIl" secondAttribute="top" id="cl6-RN-TpB"/>
+                            <constraint firstItem="wmZ-d7-ayh" firstAttribute="leading" secondItem="9po-cN-XIl" secondAttribute="leading" id="dIc-Yr-usU"/>
+                            <constraint firstItem="9po-cN-XIl" firstAttribute="trailing" secondItem="wmZ-d7-ayh" secondAttribute="trailing" id="oq7-CU-aDL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sV9-oa-LaW"/>
+                    <connections>
+                        <outlet property="gradeChangeOutlet" destination="CFU-OS-rTt" id="DIE-gt-cef"/>
+                        <outlet property="nameChangeOutlet" destination="nIM-FM-GpN" id="Uaj-kj-PRo"/>
+                        <outlet property="nicknameChangeOutlet" destination="Tdi-9r-DXB" id="rMy-ad-hXa"/>
+                        <outlet property="stuSelectedOutlet" destination="OWV-hx-qsF" id="Esx-KG-Hfb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5J-X7-Xie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -218,46 +337,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add New Student" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0X-Du-PRr">
-                                <rect key="frame" x="87" y="92" width="240" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ufZ-Oo-uAf">
-                                <rect key="frame" x="54" y="175" width="305" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nickname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4n-hv-w1x">
-                                <rect key="frame" x="54" y="251" width="305" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bie-hU-drY">
-                                <rect key="frame" x="54" y="328" width="305" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Z1-Nn-JDz">
-                                <rect key="frame" x="127" y="412" width="160" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="ENTER">
-                                    <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
-                                    <color key="baseBackgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="enterAction:" destination="FqE-0m-Yvc" eventType="touchUpInside" id="dVH-G7-AJI"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zGa-Hc-iT6">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add New Student" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0X-Du-PRr">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ufZ-Oo-uAf">
+                                        <rect key="frame" x="0.0" y="77" width="414" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nickname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4n-hv-w1x">
+                                        <rect key="frame" x="0.0" y="115.5" width="414" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bie-hU-drY">
+                                        <rect key="frame" x="0.0" y="154" width="414" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Z1-Nn-JDz">
+                                        <rect key="frame" x="0.0" y="192.5" width="414" height="38.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="ENTER">
+                                            <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
+                                            <color key="baseBackgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="enterAction:" destination="FqE-0m-Yvc" eventType="touchUpInside" id="dVH-G7-AJI"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGH-cH-PXH">
+                                        <rect key="frame" x="0.0" y="231" width="414" height="539"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Z1-Nn-JDz" firstAttribute="height" secondItem="zGa-Hc-iT6" secondAttribute="height" multiplier="0.05" id="H0u-cC-xnS"/>
+                                    <constraint firstItem="bie-hU-drY" firstAttribute="height" secondItem="zGa-Hc-iT6" secondAttribute="height" multiplier="0.05" id="PB1-OW-EXv"/>
+                                    <constraint firstItem="L0X-Du-PRr" firstAttribute="height" secondItem="zGa-Hc-iT6" secondAttribute="height" multiplier="0.1" id="X7n-sg-6pf"/>
+                                    <constraint firstItem="ufZ-Oo-uAf" firstAttribute="height" secondItem="zGa-Hc-iT6" secondAttribute="height" multiplier="0.05" id="uRM-2P-UBy"/>
+                                    <constraint firstItem="n4n-hv-w1x" firstAttribute="height" secondItem="zGa-Hc-iT6" secondAttribute="height" multiplier="0.05" id="vKu-dp-Kpd"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dzh-yb-EBx"/>
                         <color key="backgroundColor" red="0.94509804249999996" green="0.72156864399999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="zGa-Hc-iT6" firstAttribute="top" secondItem="Dzh-yb-EBx" secondAttribute="top" id="AYR-Dz-tWn"/>
+                            <constraint firstItem="Dzh-yb-EBx" firstAttribute="trailing" secondItem="zGa-Hc-iT6" secondAttribute="trailing" id="BO8-fP-oHY"/>
+                            <constraint firstItem="Dzh-yb-EBx" firstAttribute="bottom" secondItem="zGa-Hc-iT6" secondAttribute="bottom" id="N1T-Q9-lqE"/>
+                            <constraint firstItem="zGa-Hc-iT6" firstAttribute="leading" secondItem="Dzh-yb-EBx" secondAttribute="leading" id="eAl-Oq-3Wk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AWA-oW-RgP"/>
                     <connections>

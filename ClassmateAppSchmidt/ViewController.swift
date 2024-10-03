@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         classmates.append(Classmate(name: "Matthew", nickname: "Glitch Fitch", grade: 11))
         classmates.append(Classmate(name: "Peter", nickname: "Peter Kickle", grade: 11))
         classmates.append(Classmate(name: "Ryan Stark", nickname: "Rat Ryan", grade: 11))
-
+        AppData.objects = classmates
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -53,6 +53,8 @@ class ViewController: UIViewController {
             AppData.added = false
 
         }
+        classmates = AppData.objects
+//        AppData.objects.removeAll()
         nameOutlet.text = "Name: \(classmates[0].getName())"
         nicknameOutlet.text = "Nickname: \(classmates[0].getNickname())"
         gradeOutlet.text = "Grade: \(classmates[0].getGrade())"
@@ -63,6 +65,7 @@ class ViewController: UIViewController {
         sophomores.removeAll()
         juniors.removeAll()
         seniors.removeAll()
+       
         
     }
     
@@ -162,6 +165,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func editAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "edit", sender: self)
     }
     
 }
