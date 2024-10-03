@@ -29,12 +29,22 @@ var grade : Int
         return name
     }
     
+    func setName(newName: String){
+        name = newName
+    }
+    
     func getNickname()->String{
         return nickname
+    }
+    func setNickname(newNickname: String){
+        nickname = newNickname
     }
     
     func getGrade()->Int{
         return grade
+    }
+    func setGrade(newGrade: Int){
+        grade = newGrade
     }
 
 }

@@ -15,6 +15,11 @@
 		224033A32CAD6FDF00A17525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224033A22CAD6FDF00A17525 /* Assets.xcassets */; };
 		224033A62CAD6FDF00A17525 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 224033A52CAD6FDF00A17525 /* Base */; };
 		224033AE2CAD702B00A17525 /* Classmate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224033AD2CAD702B00A17525 /* Classmate.swift */; };
+		22C87C992CADF134002EB036 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C87C982CADF134002EB036 /* HomeViewController.swift */; };
+		22C87C9B2CADF187002EB036 /* SortedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C87C9A2CADF187002EB036 /* SortedViewController.swift */; };
+		22C87C9D2CAE1C92002EB036 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C87C9C2CAE1C92002EB036 /* AppData.swift */; };
+		22C87C9F2CAE2BB0002EB036 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C87C9E2CAE2BB0002EB036 /* AddViewController.swift */; };
+		22C87CA12CAE2BBE002EB036 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C87CA02CAE2BBE002EB036 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		224033A52CAD6FDF00A17525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		224033A72CAD6FDF00A17525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		224033AD2CAD702B00A17525 /* Classmate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classmate.swift; sourceTree = "<group>"; };
+		22C87C982CADF134002EB036 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		22C87C9A2CADF187002EB036 /* SortedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedViewController.swift; sourceTree = "<group>"; };
+		22C87C9C2CAE1C92002EB036 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		22C87C9E2CAE2BB0002EB036 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		22C87CA02CAE2BBE002EB036 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +72,14 @@
 			children = (
 				224033962CAD6FDD00A17525 /* AppDelegate.swift */,
 				224033982CAD6FDD00A17525 /* SceneDelegate.swift */,
-				2240339A2CAD6FDD00A17525 /* ViewController.swift */,
+				22C87C9C2CAE1C92002EB036 /* AppData.swift */,
 				224033AD2CAD702B00A17525 /* Classmate.swift */,
 				2240339C2CAD6FDD00A17525 /* Main.storyboard */,
+				2240339A2CAD6FDD00A17525 /* ViewController.swift */,
+				22C87C9E2CAE2BB0002EB036 /* AddViewController.swift */,
+				22C87CA02CAE2BBE002EB036 /* EditViewController.swift */,
+				22C87C9A2CADF187002EB036 /* SortedViewController.swift */,
+				22C87C982CADF134002EB036 /* HomeViewController.swift */,
 				224033A22CAD6FDF00A17525 /* Assets.xcassets */,
 				224033A42CAD6FDF00A17525 /* LaunchScreen.storyboard */,
 				224033A72CAD6FDF00A17525 /* Info.plist */,
@@ -144,11 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C87CA12CAE2BBE002EB036 /* EditViewController.swift in Sources */,
 				224033A12CAD6FDD00A17525 /* ClassmateAppSchmidt.xcdatamodeld in Sources */,
 				224033AE2CAD702B00A17525 /* Classmate.swift in Sources */,
+				22C87C9F2CAE2BB0002EB036 /* AddViewController.swift in Sources */,
 				2240339B2CAD6FDD00A17525 /* ViewController.swift in Sources */,
+				22C87C9D2CAE1C92002EB036 /* AppData.swift in Sources */,
 				224033972CAD6FDD00A17525 /* AppDelegate.swift in Sources */,
 				224033992CAD6FDD00A17525 /* SceneDelegate.swift in Sources */,
+				22C87C9B2CADF187002EB036 /* SortedViewController.swift in Sources */,
+				22C87C992CADF134002EB036 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
