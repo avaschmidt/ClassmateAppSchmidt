@@ -16,6 +16,7 @@
 		224033A32CAD6FDF00A17525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224033A22CAD6FDF00A17525 /* Assets.xcassets */; };
 		224033A62CAD6FDF00A17525 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 224033A52CAD6FDF00A17525 /* Base */; };
 		224033AE2CAD702B00A17525 /* Classmate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224033AD2CAD702B00A17525 /* Classmate.swift */; };
+		226ABC8A2CB01D7A00479DEA /* BoatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226ABC892CB01D7A00479DEA /* BoatViewController.swift */; };
 		22C87C992CADF134002EB036 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C87C982CADF134002EB036 /* HomeViewController.swift */; };
 		22C87C9B2CADF187002EB036 /* SortedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C87C9A2CADF187002EB036 /* SortedViewController.swift */; };
 		22C87C9D2CAE1C92002EB036 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C87C9C2CAE1C92002EB036 /* AppData.swift */; };
@@ -35,6 +36,7 @@
 		224033A52CAD6FDF00A17525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		224033A72CAD6FDF00A17525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		224033AD2CAD702B00A17525 /* Classmate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classmate.swift; sourceTree = "<group>"; };
+		226ABC892CB01D7A00479DEA /* BoatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatViewController.swift; sourceTree = "<group>"; };
 		22C87C982CADF134002EB036 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		22C87C9A2CADF187002EB036 /* SortedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedViewController.swift; sourceTree = "<group>"; };
 		22C87C9C2CAE1C92002EB036 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				22C87C9C2CAE1C92002EB036 /* AppData.swift */,
 				224033AD2CAD702B00A17525 /* Classmate.swift */,
 				2240339C2CAD6FDD00A17525 /* Main.storyboard */,
+				226ABC892CB01D7A00479DEA /* BoatViewController.swift */,
 				221616212CB012640048B86C /* QuizViewController.swift */,
 				2240339A2CAD6FDD00A17525 /* ViewController.swift */,
 				22C87C9E2CAE2BB0002EB036 /* AddViewController.swift */,
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226ABC8A2CB01D7A00479DEA /* BoatViewController.swift in Sources */,
 				22C87CA12CAE2BBE002EB036 /* EditViewController.swift in Sources */,
 				224033A12CAD6FDD00A17525 /* ClassmateAppSchmidt.xcdatamodeld in Sources */,
 				224033AE2CAD702B00A17525 /* Classmate.swift in Sources */,

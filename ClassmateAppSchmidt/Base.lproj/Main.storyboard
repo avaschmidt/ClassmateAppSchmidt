@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Upv-Zd-WlQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Upv-Zd-WlQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,13 +15,79 @@
                     <view key="view" contentMode="scaleToFill" id="XzV-gb-Aej">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7ff-VP-CXs">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmG-wv-aES">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3V-S6-afz">
+                                        <rect key="frame" x="0.0" y="77" width="414" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Nickname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xyH-R7-jYq">
+                                        <rect key="frame" x="0.0" y="115.5" width="414" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qI0-kB-YWs">
+                                        <rect key="frame" x="0.0" y="161.5" width="414" height="38.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="ENTER">
+                                            <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                            <color key="baseBackgroundColor" red="0.68164189210000004" green="0.52013884519999998" blue="0.31947728869999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="guessAction:" destination="nMs-b2-heq" eventType="touchUpInside" id="Xcn-PA-Udn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPg-TH-WME">
+                                        <rect key="frame" x="0.0" y="200" width="414" height="46.5"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc7-Gj-f77">
+                                        <rect key="frame" x="0.0" y="246.5" width="414" height="523.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="v3V-S6-afz" firstAttribute="height" secondItem="7ff-VP-CXs" secondAttribute="height" multiplier="0.05" id="1fe-1D-i7w"/>
+                                    <constraint firstItem="qI0-kB-YWs" firstAttribute="height" secondItem="7ff-VP-CXs" secondAttribute="height" multiplier="0.05" id="Gwi-Pt-FjV"/>
+                                    <constraint firstItem="wPg-TH-WME" firstAttribute="height" secondItem="7ff-VP-CXs" secondAttribute="height" multiplier="0.06" id="SZk-vm-KhN"/>
+                                    <constraint firstItem="RmG-wv-aES" firstAttribute="height" secondItem="7ff-VP-CXs" secondAttribute="height" multiplier="0.1" id="aG0-Fp-ACF"/>
+                                    <constraint firstItem="xyH-R7-jYq" firstAttribute="height" secondItem="7ff-VP-CXs" secondAttribute="height" multiplier="0.06" id="gTL-94-nIR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="F8n-B1-dPR"/>
                         <color key="backgroundColor" red="0.94509804249999996" green="0.72156864399999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="7ff-VP-CXs" firstAttribute="leading" secondItem="F8n-B1-dPR" secondAttribute="leading" id="Ayf-Sm-dI1"/>
+                            <constraint firstItem="F8n-B1-dPR" firstAttribute="trailing" secondItem="7ff-VP-CXs" secondAttribute="trailing" id="Rn2-pc-Dat"/>
+                            <constraint firstItem="7ff-VP-CXs" firstAttribute="top" secondItem="F8n-B1-dPR" secondAttribute="top" id="VdN-Tt-HI0"/>
+                            <constraint firstItem="F8n-B1-dPR" firstAttribute="bottom" secondItem="7ff-VP-CXs" secondAttribute="bottom" id="oo3-Hw-D6a"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sDJ-bV-Ebi"/>
+                    <connections>
+                        <outlet property="correctOutlet" destination="wPg-TH-WME" id="hYB-fG-RpG"/>
+                        <outlet property="guessOutlet" destination="xyH-R7-jYq" id="ucx-ta-hSY"/>
+                        <outlet property="nameDisplayOutlet" destination="v3V-S6-afz" id="p9A-US-o3V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rey-qk-WgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="842" y="-640"/>
+            <point key="canvasLocation" x="826" y="-725"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -46,10 +113,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiger" translatesAutoresizingMaskIntoConstraints="NO" id="hZb-JI-Hz6">
-                                        <rect key="frame" x="0.0" y="179.5" width="414" height="562"/>
+                                        <rect key="frame" x="0.0" y="179.5" width="414" height="518.5"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUe-4e-ker">
-                                        <rect key="frame" x="0.0" y="741.5" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="698" width="414" height="43.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="VIEW CLASS">
                                             <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
@@ -60,29 +127,44 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLD-gj-yuh">
-                                        <rect key="frame" x="0.0" y="784.5" width="414" height="17"/>
+                                        <rect key="frame" x="0.0" y="741.5" width="414" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7U-Rv-AaX">
-                                        <rect key="frame" x="0.0" y="801.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="758.5" width="414" height="43"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="QUIZ">
                                             <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
                                             <color key="baseBackgroundColor" red="0.68235301969999995" green="0.5176470876" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="nMs-b2-heq" kind="show" identifier="quiz" id="fHY-YN-CVJ"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8km-Yv-dHf">
-                                        <rect key="frame" x="0.0" y="845" width="414" height="17"/>
+                                        <rect key="frame" x="0.0" y="801.5" width="414" height="17.5"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDb-N5-wMR">
+                                        <rect key="frame" x="0.0" y="819" width="414" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="SEATING CHART">
+                                            <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                            <color key="baseBackgroundColor" red="0.68164189210000004" green="0.52013884519999998" blue="0.31947728869999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="1de-Td-b2H" kind="show" id="vtH-02-tdu"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="8km-Yv-dHf" firstAttribute="height" secondItem="f6p-Og-uAb" secondAttribute="height" multiplier="0.02" id="IGJ-po-T7V"/>
                                     <constraint firstItem="TLC-Ek-VLo" firstAttribute="height" secondItem="f6p-Og-uAb" secondAttribute="height" multiplier="0.108469" id="RVN-0t-ovv"/>
+                                    <constraint firstItem="iDb-N5-wMR" firstAttribute="height" secondItem="f6p-Og-uAb" secondAttribute="height" multiplier="0.05" id="aJ6-Wr-8ME"/>
                                     <constraint firstItem="XUe-4e-ker" firstAttribute="height" secondItem="f6p-Og-uAb" secondAttribute="height" multiplier="0.05" id="cxd-jK-boc"/>
                                     <constraint firstItem="QNE-2n-aBj" firstAttribute="height" secondItem="f6p-Og-uAb" secondAttribute="height" multiplier="0.1" id="pVh-9P-jLz"/>
                                     <constraint firstItem="YLD-gj-yuh" firstAttribute="height" secondItem="f6p-Og-uAb" secondAttribute="height" multiplier="0.02" id="u0l-Rm-35v"/>
@@ -275,6 +357,42 @@
             </objects>
             <point key="canvasLocation" x="2278.6259541984732" y="-6.3380281690140849"/>
         </scene>
+        <!--Boat View Controller-->
+        <scene sceneID="NA7-RA-fLF">
+            <objects>
+                <viewController id="1de-Td-b2H" customClass="BoatViewController" customModule="ClassmateAppSchmidt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FWc-hj-1Pq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ca0-UR-lWf">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vCe-ag-M7b">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="770"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H3f-oa-Zvl"/>
+                        <color key="backgroundColor" red="0.94328010080000002" green="0.71978648619999996" blue="0.4421039443" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="H3f-oa-Zvl" firstAttribute="bottom" secondItem="ca0-UR-lWf" secondAttribute="bottom" id="7lM-pP-3fR"/>
+                            <constraint firstItem="ca0-UR-lWf" firstAttribute="leading" secondItem="H3f-oa-Zvl" secondAttribute="leading" id="FOB-qt-ieP"/>
+                            <constraint firstItem="ca0-UR-lWf" firstAttribute="top" secondItem="H3f-oa-Zvl" secondAttribute="top" id="X9v-yS-gQr"/>
+                            <constraint firstItem="H3f-oa-Zvl" firstAttribute="trailing" secondItem="ca0-UR-lWf" secondAttribute="trailing" id="zAC-48-1zo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uq4-gM-ume"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uny-PB-vIq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540.57971014492762" y="722.54464285714278"/>
+        </scene>
         <!--Edit View Controller-->
         <scene sceneID="qMf-BG-F2T">
             <objects>
@@ -358,7 +476,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5J-X7-Xie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="826" y="721"/>
+            <point key="canvasLocation" x="1338" y="721"/>
         </scene>
         <!--Add View Controller-->
         <scene sceneID="7Yr-qF-7Rz">
@@ -460,5 +578,11 @@
     </scenes>
     <resources>
         <image name="tiger" width="505" height="494"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -33,6 +33,10 @@ class EditViewController: UIViewController {
                 }
             }
         }
+        gradeChangeOutlet.text = ""
+        nameChangeOutlet.text = ""
+        stuSelectedOutlet.text = ""
+        nicknameChangeOutlet.text = ""
     }
     
 }
