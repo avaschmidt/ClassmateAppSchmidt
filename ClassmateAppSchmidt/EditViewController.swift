@@ -24,7 +24,7 @@ class EditViewController: UIViewController {
                         student.setNickname(newNickname: nicknameChangeOutlet.text!)
                     }
                     if nameChangeOutlet.text != nil{
-                        student.setName(newName: nicknameChangeOutlet.text!)
+                        student.setName(newName: nameChangeOutlet.text!)
                     }
                     if gradeChangeOutlet.text != nil{
                         student.setGrade(newGrade: Int(gradeChangeOutlet.text!)!)

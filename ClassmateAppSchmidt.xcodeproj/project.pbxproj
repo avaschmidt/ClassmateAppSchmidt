@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221616222CB012640048B86C /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221616212CB012640048B86C /* QuizViewController.swift */; };
 		224033972CAD6FDD00A17525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224033962CAD6FDD00A17525 /* AppDelegate.swift */; };
 		224033992CAD6FDD00A17525 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224033982CAD6FDD00A17525 /* SceneDelegate.swift */; };
 		2240339B2CAD6FDD00A17525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2240339A2CAD6FDD00A17525 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		221616212CB012640048B86C /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		224033932CAD6FDD00A17525 /* ClassmateAppSchmidt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassmateAppSchmidt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		224033962CAD6FDD00A17525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		224033982CAD6FDD00A17525 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				22C87C9C2CAE1C92002EB036 /* AppData.swift */,
 				224033AD2CAD702B00A17525 /* Classmate.swift */,
 				2240339C2CAD6FDD00A17525 /* Main.storyboard */,
+				221616212CB012640048B86C /* QuizViewController.swift */,
 				2240339A2CAD6FDD00A17525 /* ViewController.swift */,
 				22C87C9E2CAE2BB0002EB036 /* AddViewController.swift */,
 				22C87CA02CAE2BBE002EB036 /* EditViewController.swift */,
@@ -166,6 +169,7 @@
 				2240339B2CAD6FDD00A17525 /* ViewController.swift in Sources */,
 				22C87C9D2CAE1C92002EB036 /* AppData.swift in Sources */,
 				224033972CAD6FDD00A17525 /* AppDelegate.swift in Sources */,
+				221616222CB012640048B86C /* QuizViewController.swift in Sources */,
 				224033992CAD6FDD00A17525 /* SceneDelegate.swift in Sources */,
 				22C87C9B2CADF187002EB036 /* SortedViewController.swift in Sources */,
 				22C87C992CADF134002EB036 /* HomeViewController.swift in Sources */,
