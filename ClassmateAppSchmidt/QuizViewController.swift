@@ -6,19 +6,22 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var correctOutlet: UILabel!
     
     var index = 0
+    var nicknameOfPerson = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         var selectedPersonName = AppData.objects[index].getName()
         nameDisplayOutlet.text = "Name: \(selectedPersonName)"
+        
             
     }
     
     @IBAction func guessAction(_ sender: UIButton) {
         resignFirstResponder()
+        
         if index < AppData.objects.count{
-            var nicknameOfPerson = AppData.objects[index].getNickname()
+            nicknameOfPerson = AppData.objects[index].getNickname()
             if guessOutlet.text != nil{
                 var guess = guessOutlet.text!
                 if guess == nicknameOfPerson{

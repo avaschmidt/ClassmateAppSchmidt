@@ -46,15 +46,17 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if AppData.added == true{
+            print("trying to add")
             classmates.append(Classmate())
             classmates[classmates.count-1].setName(newName: AppData.newStuName)
             classmates[classmates.count-1].setNickname(newNickname: AppData.newStuNickname)
             classmates[classmates.count-1].setGrade(newGrade: AppData.newStuGrade)
             AppData.added = false
+           // AppData.objects = classmates
 
         }
-        classmates = AppData.objects
-//        AppData.objects.removeAll()
+       //classmates = AppData.objects
+       // AppData.objects.removeAll()
         nameOutlet.text = "Name: \(classmates[0].getName())"
         nicknameOutlet.text = "Nickname: \(classmates[0].getNickname())"
         gradeOutlet.text = "Grade: \(classmates[0].getGrade())"
