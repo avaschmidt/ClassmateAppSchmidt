@@ -16,6 +16,7 @@
 		224033A32CAD6FDF00A17525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224033A22CAD6FDF00A17525 /* Assets.xcassets */; };
 		224033A62CAD6FDF00A17525 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 224033A52CAD6FDF00A17525 /* Base */; };
 		224033AE2CAD702B00A17525 /* Classmate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224033AD2CAD702B00A17525 /* Classmate.swift */; };
+		225D42672CB9C2E0003A9E0B /* ViewStuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D42662CB9C2E0003A9E0B /* ViewStuViewController.swift */; };
 		226ABC8A2CB01D7A00479DEA /* BoatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226ABC892CB01D7A00479DEA /* BoatViewController.swift */; };
 		22A3BECC2CB805C200ADFB3D /* CrazyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3BECB2CB805C200ADFB3D /* CrazyCell.swift */; };
 		22A3BECE2CB8066E00ADFB3D /* ShowCrazyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3BECD2CB8066E00ADFB3D /* ShowCrazyViewController.swift */; };
@@ -38,6 +39,7 @@
 		224033A52CAD6FDF00A17525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		224033A72CAD6FDF00A17525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		224033AD2CAD702B00A17525 /* Classmate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classmate.swift; sourceTree = "<group>"; };
+		225D42662CB9C2E0003A9E0B /* ViewStuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStuViewController.swift; sourceTree = "<group>"; };
 		226ABC892CB01D7A00479DEA /* BoatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatViewController.swift; sourceTree = "<group>"; };
 		22A3BECB2CB805C200ADFB3D /* CrazyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyCell.swift; sourceTree = "<group>"; };
 		22A3BECD2CB8066E00ADFB3D /* ShowCrazyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCrazyViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				22C87C9C2CAE1C92002EB036 /* AppData.swift */,
 				224033AD2CAD702B00A17525 /* Classmate.swift */,
 				2240339C2CAD6FDD00A17525 /* Main.storyboard */,
+				225D42662CB9C2E0003A9E0B /* ViewStuViewController.swift */,
 				22A3BECB2CB805C200ADFB3D /* CrazyCell.swift */,
 				22A3BECD2CB8066E00ADFB3D /* ShowCrazyViewController.swift */,
 				226ABC892CB01D7A00479DEA /* BoatViewController.swift */,
@@ -184,6 +187,7 @@
 				22A3BECC2CB805C200ADFB3D /* CrazyCell.swift in Sources */,
 				224033992CAD6FDD00A17525 /* SceneDelegate.swift in Sources */,
 				22C87C9B2CADF187002EB036 /* SortedViewController.swift in Sources */,
+				225D42672CB9C2E0003A9E0B /* ViewStuViewController.swift in Sources */,
 				22C87C992CADF134002EB036 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

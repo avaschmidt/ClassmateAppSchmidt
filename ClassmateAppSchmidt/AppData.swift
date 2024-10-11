@@ -5,4 +5,5 @@ class AppData{
     static var newStuGrade = 0
     static var added = false
     static var objects = [Classmate]()
+    static var selectedStudent = ""
 }

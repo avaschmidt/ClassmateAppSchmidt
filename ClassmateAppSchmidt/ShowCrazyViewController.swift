@@ -5,7 +5,13 @@ class ShowCrazyViewController: UIViewController, UITableViewDataSource, UITableV
     @IBOutlet weak var addOutlet: UITextField!
     
     @IBOutlet weak var tableViewOutlet: UITableView!
+    
     var names = [String]()
+    
+    var rowSelected = -1
+    
+    var timesClicked = 0
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +34,8 @@ class ShowCrazyViewController: UIViewController, UITableViewDataSource, UITableV
         names.append("Daniel")
         names.append("Ryan Stark")
         names.append("Peter")
+        AppData.namesOfEveryone = names
+
         
     }
     
@@ -46,15 +54,25 @@ class ShowCrazyViewController: UIViewController, UITableViewDataSource, UITableV
 
     @IBAction func addAction(_ sender: UIButton) {
         if addOutlet.text != nil{
-            names.append(addOutlet.text!)
+            names.insert(addOutlet.text!, at: 0)
         }
         tableViewOutlet.reloadData()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        rowSelected = indexPath.row
+        timesClicked = timesClicked + 1
+        if timesClicked % 2 == 0{
+            performSegue(withIdentifier: "doubleClicked", sender: self)
+        }
+    }
     
     
     @IBAction func deleteAction(_ sender: UIButton) {
-        //  names.remove(at: <#T##Int#>)
+        if rowSelected > -1{
+            names.remove(at: rowSelected)
+        }
+        tableViewOutlet.reloadData()
     }
     
 }
