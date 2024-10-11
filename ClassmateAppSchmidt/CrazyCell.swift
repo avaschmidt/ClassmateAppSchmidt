@@ -1,8 +1,7 @@
-//
-//  CrazyCell.swift
-//  ClassmateAppSchmidt
-//
-//  Created by AVA SCHMIDT on 10/10/24.
-//
-
 import Foundation
+import UIKit
+class CrazyCell : UITableViewCell{
+    
+    @IBOutlet weak var nameLabelOutlet: UILabel!
+    
+}
