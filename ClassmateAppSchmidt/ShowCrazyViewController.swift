@@ -57,6 +57,7 @@ class ShowCrazyViewController: UIViewController, UITableViewDataSource, UITableV
             names.insert(addOutlet.text!, at: 0)
         }
         tableViewOutlet.reloadData()
+        addOutlet.text = ""
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
