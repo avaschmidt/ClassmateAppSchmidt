@@ -73,6 +73,7 @@ class ShowCrazyViewController: UIViewController, UITableViewDataSource, UITableV
         if rowSelected > -1{
             names.remove(at: rowSelected)
         }
+        timesClicked = 0
         tableViewOutlet.reloadData()
     }
     
